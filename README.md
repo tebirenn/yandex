@@ -1,9 +1,35 @@
+<hr>
+<h1 style="text-align: center;">Yandex</h1>
+Yandex Маркет 
+<br>
+Yandex Путешествия
 
-### Чтобы запустить проект вы должны иметь у себя пакетный менеджер `npm`
+<br>
+<hr>
+<h1 style="text-align: center;">Technologies</h1>
+<ul style="margin: 0; padding: 20px;">
+    <li>React</li>
+    <li>Node.JS</li>
+    <li>Axios (api requests)</li>
+    <li>React-router-dom (routing)</li>
+</ul>
 
-### Первым делом запустите команду `npm install` чтобы локально скачать все необходимые фреймворки и библиотеки
+<hr>
+<h1 style="text-align: center;">Get Start</h1>
+<ol style="margin: 0; padding: 20px;">
+    <li>Install npm packet manager</li>
+    <li>Run <b style="color: red; font-size: 1.4rem;">npm install</b> on terminal</li>
+    <li>Run <b style="color: red; font-size: 1.4rem;">npm start</b> on terminal</li>
+    <li>Open <b style="color: red; font-size: 1.4rem;">http://localhost:3000</b> on browser</li>
+</ol>
 
-### Далее чтобы запустить сам проект понадобиться команда `npm start`
-
-### Проект обычно запускается с портом 3000
-### В браузере открываете `http://localhost:3000`
+<hr>
+<h1 style="text-align: center;">Members</h1>
+<ol style="margin: 0; padding: 20px;">
+    <p>Link to github profiles</p>
+    <li><a href="https://github.com/tebirenn">Alan Saudabekov</a></li>
+    <li><a href="https://github.com/weydany">Dayana Khairanova</a></li>
+    <li><a href="https://github.com/wupsi">Nurtay Zholdaskaliyev</a></li>
+    <li><a href="https://github.com/noscetemet13">Amina Orazgali</a></li>
+    <li><a href="https://github.com/YernarKhassen">Yernar Khassen</a></li>
+</ol>
