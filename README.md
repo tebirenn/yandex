@@ -1,13 +1,13 @@
 <hr>
-<h1 style="text-align: center;">Yandex</h1>
+<h1>Yandex</h1>
 Yandex Маркет 
 <br>
 Yandex Путешествия
 
 <br>
 <hr>
-<h1 style="text-align: center;">Technologies</h1>
-<ul style="margin: 0; padding: 20px;">
+<h1>Technologies</h1>
+<ul>
     <li>React</li>
     <li>Node.JS</li>
     <li>Axios (api requests)</li>
@@ -15,12 +15,12 @@ Yandex Путешествия
 </ul>
 
 <hr>
-<h1 style="text-align: center;">Get Start</h1>
-<ol style="margin: 0; padding: 20px;">
+<h1>Get Start</h1>
+<ol>
     <li>Install npm packet manager</li>
-    <li>Run <b style="color: red; font-size: 1.4rem;">npm install</b> on terminal</li>
-    <li>Run <b style="color: red; font-size: 1.4rem;">npm start</b> on terminal</li>
-    <li>Open <b style="color: red; font-size: 1.4rem;">http://localhost:3000</b> on browser</li>
+    <li>Run <b>npm install</b> on terminal</li>
+    <li>Run <b>npm start</b> on terminal</li>
+    <li>Open <b>http://localhost:3000</b> on browser</li>
 </ol>
 
 <hr>
