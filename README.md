@@ -18,9 +18,9 @@ Yandex Путешествия
 <h1>Get Start</h1>
 <ol>
     <li>Install npm packet manager</li>
-    <li>Run <b>npm install</b> on terminal</li>
-    <li>Run <b>npm start</b> on terminal</li>
-    <li>Open <b>http://localhost:3000</b> on browser</li>
+    <li>Run <b>"npm install"</b> on terminal</li>
+    <li>Run <b>"npm start"</b> on terminal</li>
+    <li>Open <b>"http://localhost:3000"</b> on browser</li>
 </ol>
 
 <hr>
