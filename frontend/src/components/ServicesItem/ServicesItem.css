@@ -2,12 +2,12 @@
 .service--item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     width: calc((100% - 40px) / 3);
-    cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     box-sizing: border-box;
     padding-right: 30px;
+    color: #000;
 }
 
 .service--item img {
@@ -21,10 +21,11 @@
     color: #2557A9;
 }
 
-.service--item h4:hover {
+.service--item:hover h4 {
     color: #FF0000;
 }
 
 .service--item p {
     font-size: 13px;
+    line-height: 15px;
 }

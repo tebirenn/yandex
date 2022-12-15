@@ -30,6 +30,10 @@
     color: #2557A9;
 }
 
+#services-links a:not(:first-child):hover {
+    color: #FF0000;
+}
+
 .service-items-list {
     padding: 50px 18%;
     display: flex;
