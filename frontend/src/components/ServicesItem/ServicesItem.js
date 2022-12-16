@@ -1,6 +1,6 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
-import { MARKET_MAIN_ROUTE, SERVICES_ROUTE, TRAVEL_MAIN_PAGE } from "../../utils/consts";
+import { MARKET_MAIN_ROUTE, SERVICES_ROUTE, TRAVEL_MAIN_PAGE_ROUTE } from "../../utils/consts";
 
 import "./ServicesItem.css";
 
@@ -19,7 +19,7 @@ const ServicesItem = (props) => {
         );
     } else if (props.header === "Путешествия") {
         return (
-            <a className="service--item" href={TRAVEL_MAIN_PAGE}>
+            <a className="service--item" href={TRAVEL_MAIN_PAGE_ROUTE}>
                 <img src={props.img} alt="" />
                 <span>
                     <h4>{props.header}</h4>
