@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e279dbd5.css",
+    "main.js": "/static/js/main.5e1d55a0.js",
+    "static/media/logo_yandex.png": "/static/media/logo_yandex.c492787759d3acd34b47.png",
+    "static/media/bg_login.jpg": "/static/media/bg_login.8fc4eb23b61b5fb4f6de.jpg",
+    "static/media/plus.svg": "/static/media/plus.50ec9bfe64dfed790b679f1b8e49dd91.svg",
+    "static/media/market_logo.svg": "/static/media/market_logo.3c05f60fcb6f21190654e7c69fba72fa.svg",
+    "static/media/img12.svg": "/static/media/img12.ce0b70bdc2f80d45024cee9649143f51.svg",
+    "static/media/img7.svg": "/static/media/img7.97c115473a47bb220add1202b637e225.svg",
+    "static/media/Yandex_logo_Cyrillic.svg": "/static/media/Yandex_logo_Cyrillic.0e6bf354f331517296b3e142d98e09c2.svg",
+    "static/media/img15.svg": "/static/media/img15.0d35dd791964f50a732e0be826841478.svg",
+    "static/media/img14.svg": "/static/media/img14.ccafb660748bfe2b703ce8ca20907373.svg",
+    "static/media/img13.svg": "/static/media/img13.0a29edc9b3323dd608a36dae65a76317.svg",
+    "static/media/img9.svg": "/static/media/img9.9c83b83e47c20a34d53ed931e6d5cf12.svg",
+    "index.html": "/index.html",
+    "static/media/img8.svg": "/static/media/img8.022da39d6d3da9aa31249daec34998a5.svg",
+    "static/media/img11.svg": "/static/media/img11.78a7b6fb25bb4bf05197de59e0ae01b2.svg",
+    "static/media/img4.svg": "/static/media/img4.8d9aaa45dfcf872f64bf1cc8b1f73d07.svg",
+    "static/media/img3.svg": "/static/media/img3.c43a33ae5cf20e269de265a8823d4f33.svg",
+    "static/media/img6.svg": "/static/media/img6.6d1836e2d556b84f9377ec1492e02125.svg",
+    "static/media/img10.svg": "/static/media/img10.1a10826a846377abd8b14336b92a356c.svg",
+    "static/media/burger_menu.svg": "/static/media/burger_menu.0f26fc2059a8880b7cd9170d6759923b.svg",
+    "static/media/img1.svg": "/static/media/img1.57607c4346199cd64b2163287f869e01.svg",
+    "static/media/img5.svg": "/static/media/img5.7de21cfe2028db649ba369b688291b8b.svg",
+    "static/media/img2.svg": "/static/media/img2.486d528d300ea531912cad46bebd4903.svg",
+    "main.e279dbd5.css.map": "/static/css/main.e279dbd5.css.map",
+    "main.5e1d55a0.js.map": "/static/js/main.5e1d55a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e279dbd5.css",
+    "static/js/main.5e1d55a0.js"
+  ]
+}
