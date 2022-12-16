@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import MarketMainHeader from "../../components/MarketMainHeader/MarketMainHeader";
 
 import "./MarketMainPage.css";
 
 const MarketMainPage = () => {
+
+    useEffect(() => {
+        document.title = "Интернет-магазин Яндекс";
+    }, []);
+
     return (
         <section id="market-main">
-            <h1>Маркет</h1>
+            <MarketMainHeader />
         </section>
     );
 }

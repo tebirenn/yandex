@@ -1,0 +1,55 @@
+
+#market-main-header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5%;
+}
+
+#market-main-header-logo {
+    margin-right: 2%;
+}
+
+#market-main-header #market-main-header-catalog-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    height: 45px;
+    background-color: #FFCC00;
+    border: 1px solid #FFCC00;
+    border-radius: 5px;
+    gap: 10px;
+    margin-right: 1%;
+}
+
+#market-main-header-catalog-btn img {
+    width: 20px;
+}
+#market-main-header-catalog-btn p {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#market-main-header #search-bar {
+    height: 45px;
+    display: flex;
+}
+#market-main-header #search-bar input {
+    height: 100%;
+    border: 2px solid #FFCC00;
+    width: calc(100vw * 0.4);
+    border-radius: 3px 0 0 3px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+#market-main-header #search-bar ::placeholder {
+    font-size: 16px;
+}
+#market-main-header #search-bar button {
+    height: 100%;
+    border: 2px solid #FFCC00;
+    background-color: #FFCC00;
+    border-radius: 0 3px 3px 0;
+    padding: 12px;
+    font-size: 16px;
+}
