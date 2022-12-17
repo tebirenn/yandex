@@ -1,4 +1,8 @@
 
+#market-main-header {
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
 #market-main-header > div:first-child {
     height: 75px;
     display: flex;

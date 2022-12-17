@@ -6,3 +6,4 @@ from rest_framework.response import Response
 class TestView(APIView):
     def get(self, request, *args, **kwargs):
         return Response({"text": "Hello world!"})
+

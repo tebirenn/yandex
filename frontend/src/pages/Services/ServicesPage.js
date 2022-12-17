@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import axios from "axios";
 
 import "./ServicesPage.css";
 import yandexLogo from "../../images/Yandex_logo_Cyrillic.svg";
@@ -44,6 +45,16 @@ const ServicesPage = () => {
         [img15, "Путешествия", "Авиабилеты, билеты на поезд, автобус, бронирование отелей"],
     ];
 
+    const testF = () => {
+        axios.get(
+            "http://127.0.0.1:8000/test/"
+        ).then(
+            data => console.log(data.data.text)
+        ).catch(
+            error => console.log(error)
+        );
+    };
+
     return (
         <section id="services-page">
             <header>
@@ -65,6 +76,7 @@ const ServicesPage = () => {
                     />
                 ))}
             </div>
+            <button onClick={testF}>abc</button>
         </section>
     );
 }
