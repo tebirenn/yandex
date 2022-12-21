@@ -1,7 +1,7 @@
 
 #auth-page {
     min-height: 100vh;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +26,7 @@
     width: 360px;
     box-sizing: border-box;
     padding: 32px;
+    position: relative;
 }
 #auth-page #form > img:first-child {
     width: 60px;
@@ -83,6 +84,20 @@
 }
 #auth-page #form-after a:hover {
     text-decoration: underline;
+}
+#auth-page #form .go-back-btn {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 12%);
+    border: none;
+    left: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 #auth-page footer {
