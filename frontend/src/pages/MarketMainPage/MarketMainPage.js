@@ -86,14 +86,14 @@ const MarketMainPage = () => {
                 <div id="reviews">
                     <div><h1 id="title">Отзывы на лучшие товары</h1></div>
                     <div>
-                        {reviewsItems.map((element, index) => {
+                        {reviewsItems.map((reviewItem, index) => {
                             return <ReviewItem
-                                key={index}
-                                image={element.image}
-                                header={element.header}
-                                desc={element.description}
-                                author={element.author}
-                                ago={element.ago}
+                                key={index.toString()}
+                                image={reviewItem.image}
+                                header={reviewItem.header}
+                                desc={reviewItem.description}
+                                author={reviewItem.author}
+                                ago={reviewItem.ago}
                             />;
                         })}
                     </div>
