@@ -65,3 +65,16 @@ def users_detail(request, user_id):
     elif request.method == 'DELETE':
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+def checkUser(request, login, password):
+    
+    try:
+        user = User.objects.get(login=logi, password=password)
+    except User.DoesNotExist:
+        return Response(status=static.HTTP_404_NOT_FOUND)
+
+    if user:
+        return True
+    else:
+        return False
+    

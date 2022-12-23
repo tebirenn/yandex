@@ -5,5 +5,6 @@ from .views import *
 urlpatterns = [           
     re_path(r'^$', users_list),
 	re_path(r'^(?P<user_id>\d+)/$', users_detail),
+    re_path(r'^(?P<login>\A-z+)/$', checkUser)
 ]
 
