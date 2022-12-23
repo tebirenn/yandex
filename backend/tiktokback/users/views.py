@@ -66,15 +66,18 @@ def users_detail(request, user_id):
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-def checkUser(request, login, password):
+@api_view(['GET', 'POST'])
+def checkUser(request):
     
+    data = request.data
+    login = data["login"]
+    password = data["password"]
     try:
-        user = User.objects.get(login=logi, password=password)
-    except User.DoesNotExist:
-        return Response(status=static.HTTP_404_NOT_FOUND)
-
-    if user:
-        return True
-    else:
-        return False
+        user = User.objects.get(login=login, password=password)
+    except:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+        
+    if request.method == 'POST':
+        return Response(user.user_id)
+            
     
