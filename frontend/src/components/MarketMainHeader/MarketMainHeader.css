@@ -76,12 +76,24 @@
     gap: 25px;
 }
 
+#market-main-header .header-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+}
+#market-main-header .header-avatar img {
+    display: block;
+    width: 100%;
+}
 
 #market-main-header .header-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    cursor: pointer;
 }
 
 #market-main-header .header-icons p {
@@ -94,7 +106,7 @@
     transform: scale(1.2);
 }
 
-#market-main-header #icons a {
+#market-main-header #icons .header-login-btn {
     display: flex;
     align-items: center;
     justify-content: center;

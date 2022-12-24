@@ -68,16 +68,15 @@ def users_detail(request, user_id):
 
 @api_view(['GET', 'POST'])
 def checkUser(request):
-    
     data = request.data
     login = data["login"]
     password = data["password"]
+
     try:
         user = User.objects.get(login=login, password=password)
     except:
-        return Response(status=status.HTTP_404_NOT_FOUND)
-        
+        return Response({"error": "error"})
+
     if request.method == 'POST':
-        return Response(user.user_id)
-            
-    
+        serializer = UserSerializer(user, context={'request': request})
+        return Response(serializer.data)
