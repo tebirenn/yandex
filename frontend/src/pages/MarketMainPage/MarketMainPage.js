@@ -23,7 +23,7 @@ import MarketFooter from "../../components/MarketFooter/MarketFooter";
 
 const MarketMainPage = () => {
 
-    // console.log(JSON.parse(localStorage.getItem("user")));
+    console.log(JSON.parse(localStorage.getItem("user")));
 
     useEffect(() => {
         document.title = "Интернет-магазин Яндекс";

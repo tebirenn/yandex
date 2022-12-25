@@ -11,6 +11,7 @@ import NumberInput from "../../components/RegPageInputs/NumberInput";
 import PersonalInput from "../../components/RegPageInputs/PersonalInput";
 import LoginInput from "../../components/RegPageInputs/LoginInput";
 import PasswordInput from "../../components/RegPageInputs/PasswordInput";
+import axios from "axios";
 
 const RegisterPage = () => {
 
@@ -21,7 +22,7 @@ const RegisterPage = () => {
     const navigate = useNavigate();
     const [page, setPage] = useState(0);
     const [formData, setFormData] = useState({
-        phone: "+7",
+        phone_number: "+7",
         name: "",
         surname: "",
         login: "",
@@ -48,6 +49,21 @@ const RegisterPage = () => {
         } 
     }
 
+    const regUser = () => {
+        axios.post("http://localhost:8000/api/users/register", formData)
+            .then(response => loginUser(response.data.status));
+    }
+
+    const loginUser = (data) => {
+        if (data === "created") {
+            axios.post("http://localhost:8000/api/users/login", {login: formData.login, password: formData.password})
+                .then(response => localStorage.setItem("user", JSON.stringify(response.data)));
+
+            navigate(MARKET_MAIN_ROUTE);
+            window.location.reload(false);
+        }
+    }
+
     return (
         <div id="reg-page">
             <img id="bg" src={bg} alt="" />
@@ -59,7 +75,7 @@ const RegisterPage = () => {
                     className="next-btn" 
                     type="button"
                     onClick={() => {
-                        setPage((currPage) => currPage < formTitles.length-1 ? currPage + 1 : navigate(MARKET_MAIN_ROUTE));
+                        setPage((currPage) => currPage < formTitles.length-1 ? currPage + 1 : regUser());
                     }}
                 >Далее</button>
                 <a href={AUTH_ROUTE}>Уже есть аккаунт</a>
