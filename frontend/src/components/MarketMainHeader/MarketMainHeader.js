@@ -7,8 +7,10 @@ import yaLogo from "../../images/ya_avatar.png";
 
 import "./MarketMainHeader.css";
 import { AUTH_ROUTE } from "../../utils/consts";
+import AvatarDrop from "../AvatarDrop/AvatarDrop";
 
 const MarketMainHeader = () => {
+    // console.log(JSON.parse(localStorage.getItem("user")));
     return (
         <header id="market-main-header">
             <div>
@@ -44,7 +46,10 @@ const MarketMainHeader = () => {
                     </span>
                     {
                         localStorage.getItem("user") ?
-                        <button className="header-avatar"><img src={yaLogo} alt="" /></button> 
+                        <button className="header-avatar">
+                            <img src={yaLogo} alt="" />
+                            <AvatarDrop />
+                        </button>
                         :
                         <a href={AUTH_ROUTE} className="header-login-btn">Войти</a>
                     }
