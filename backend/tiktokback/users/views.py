@@ -82,5 +82,3 @@ def checkUser(request):
         serializer = UserSerializer(user,context={'request': request})
         return Response(serializer.data)
         
-            
-    

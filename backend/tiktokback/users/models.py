@@ -10,5 +10,5 @@ class User(models.Model):
     phone_number = models.CharField(max_length=50)
     sub_plus = models.BooleanField(default=False)
 
-    def _str_(self):
+    def __str__(self):
         return self.name
