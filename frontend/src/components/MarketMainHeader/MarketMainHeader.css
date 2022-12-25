@@ -82,8 +82,13 @@
     border-radius: 100%;
     border: none;
     cursor: pointer;
+    position: relative;
 }
-#market-main-header .header-avatar img {
+#market-main-header .header-avatar:hover #avatar-drop {
+    display: flex;
+    opacity: 1;
+}
+#market-main-header .header-avatar > img {
     display: block;
     width: 100%;
 }
