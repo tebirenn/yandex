@@ -4,5 +4,7 @@ from .views import *
 
 urlpatterns = [           
     re_path(r'^$', products_list),
+    re_path('detail', product_detail),
+    re_path('category',get_products_by_category),
 ]
 
