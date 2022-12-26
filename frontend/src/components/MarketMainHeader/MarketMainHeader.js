@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import AvatarDrop from "../AvatarDrop/AvatarDrop";
 
 import marketLogo from "../../images/market_logo.svg";
 import bugerMenuIcon from "../../images/burger_menu.svg";
@@ -7,10 +9,11 @@ import yaLogo from "../../images/ya_avatar.png";
 
 import "./MarketMainHeader.css";
 import { AUTH_ROUTE } from "../../utils/consts";
-import AvatarDrop from "../AvatarDrop/AvatarDrop";
 
 const MarketMainHeader = () => {
-    // console.log(JSON.parse(localStorage.getItem("user")));
+    
+    const navigate = useNavigate();
+
     return (
         <header id="market-main-header">
             <div>
@@ -61,22 +64,14 @@ const MarketMainHeader = () => {
                     <p>Алматы</p>
                 </span>
                 <div id="categories">
-                    <a href="">Новый год</a>
-                    <a href="">Аптека</a>
-                    <a href="">Алиса</a>
-                    <a href="">ИКЕА</a>
-                    <a href="">Маркет 15</a>
-                    <a href="">Универмаг</a>
-                    <a href="">Продукты</a>
-                    <a href="">Дом</a>
-                    <a href="">Одежда</a>
-                    <a href="">Детям</a>
-                    <a href="">Красота</a>
-                    <a href="">Электроника</a>
-                    <a href="">18+</a>
+                    <a href=".">Электроника</a>
+                    <a href=".">Продукты</a>
+                    <a href=".">Аптека</a>
+                    <a href=".">Дом</a>
+                    <a href=".">Одежда</a>                    
                 </div>
                 <span>
-                    <a href="">Покупайте как юрлицо</a>
+                    <a href=".">Покупайте как юрлицо</a>
                 </span>
             </div>
         </header>

@@ -151,11 +151,6 @@
     gap: 22px;
     align-items: center;
 }
-#market-main-header #categories a:first-child {
-    background-color: #FFCC00;
-    padding: 3px 15px;
-    border-radius: 5px;
-}
 #market-main-header #categories a,
 #market-main-header > div:last-child > span:last-child a {
     color: #000;
@@ -163,6 +158,6 @@
     font-size: 14px;
 }
 #market-main-header > div:last-child > span:last-child a:hover,
-#market-main-header #categories a:not(:first-child):hover {
+#market-main-header #categories a:hover {
     color: #ff0000;
 }

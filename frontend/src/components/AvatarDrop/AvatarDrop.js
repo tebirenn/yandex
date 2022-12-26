@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 import "./AvatarDrop.css";
 import yaAvatar from "../../images/ya_avatar.png";
 import exitIcon from "../../images/exit.svg";
-import { MARKET_MAIN_ROUTE } from "../../utils/consts";
+import { PROFILE_ROUTE } from "../../utils/consts";
+// import { MARKET_MAIN_ROUTE } from "../../utils/consts";
 // import cubeIcon from "../../images/cube.svg";
 // import heartIcon from "../../images/heart.svg";
 // import returnIcon from "../../images/return.svg";
@@ -18,7 +19,7 @@ const AvatarDrop = () => {
 
     return (
         <div id="avatar-drop">
-            <span id="avatar-drop-user">
+            <span id="avatar-drop-user" onClick={() => navigate(PROFILE_ROUTE)}>
                 <div>
                     <img src={yaAvatar} alt="" />
                 </div>
