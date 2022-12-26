@@ -20,6 +20,7 @@
 
 #market-main-header-logo {
     margin-right: 2%;
+    cursor: pointer;
 }
 
 #market-main-header #market-main-header-catalog-btn {
@@ -50,7 +51,7 @@
 #market-main-header #search-bar input {
     height: 100%;
     border: 2px solid #FFCC00;
-    width: calc(100vw * 0.4);
+    width: calc(100vw * 0.42);
     border-radius: 3px 0 0 3px;
     padding: 0 15px;
     box-sizing: border-box;

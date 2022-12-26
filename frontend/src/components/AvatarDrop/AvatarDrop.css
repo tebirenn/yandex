@@ -46,7 +46,7 @@
 }
 #avatar-drop span:not(:first-child) img {
     display: block;
-    width: 24px;
+    width: 20px;
 }
 #avatar-drop .exit-icon {
     transform: rotate(180deg);

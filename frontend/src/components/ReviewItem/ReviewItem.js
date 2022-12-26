@@ -2,7 +2,7 @@ import React from "react";
 
 import "./ReviewItem.css";
 import starIcon from "../../images/star_icon.svg";
-import defaultAvatar from "../../images/default_avatar.jpg";
+import yaAvatar from "../../images/ya_avatar.png";
 
 const ReviewItem = (props) => {
     return (
@@ -24,7 +24,7 @@ const ReviewItem = (props) => {
                 <p>{props.desc}</p>
                 <div>
                     <span>
-                        <img src={defaultAvatar} alt="" />
+                        <img src={yaAvatar} alt="" />
                     </span>
                     <span className="author">
                         <p>{props.author}</p>

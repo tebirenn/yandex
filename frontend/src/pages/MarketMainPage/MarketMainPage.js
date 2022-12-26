@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import MarketMainHeader from "../../components/MarketMainHeader/MarketMainHeader";
 import ReviewItem from "../../components/ReviewItem/ReviewItem";
+import MarketFooter from "../../components/MarketFooter/MarketFooter";
 
 import "./MarketMainPage.css";
 
@@ -16,14 +17,11 @@ import acdc_3 from "../../images/acdc3.webp";
 import acdc_4 from "../../images/acdc4.webp";
 import r1 from "../../images/reviews/r1.webp";
 import r2 from "../../images/reviews/r2.webp";
-import MarketFooter from "../../components/MarketFooter/MarketFooter";
 // import r3 from "../../images/reviews/r3.webp";
 // import r4 from "../../images/reviews/r4.webp";
 
 
 const MarketMainPage = () => {
-
-    console.log(JSON.parse(localStorage.getItem("user")));
 
     useEffect(() => {
         document.title = "Интернет-магазин Яндекс";

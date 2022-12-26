@@ -8,7 +8,7 @@ import plusIcon from "../../images/market-header/plus.svg";
 import yaLogo from "../../images/ya_avatar.png";
 
 import "./MarketMainHeader.css";
-import { AUTH_ROUTE } from "../../utils/consts";
+import { AUTH_ROUTE, CATEGORY_ROUTE, MARKET_MAIN_ROUTE } from "../../utils/consts";
 
 const MarketMainHeader = () => {
     
@@ -17,7 +17,7 @@ const MarketMainHeader = () => {
     return (
         <header id="market-main-header">
             <div>
-                <span id="market-main-header-logo">
+                <span id="market-main-header-logo" onClick={() => navigate(MARKET_MAIN_ROUTE)}>
                     <img src={marketLogo} alt="" />
                 </span>
                 <button id="market-main-header-catalog-btn">
@@ -64,11 +64,11 @@ const MarketMainHeader = () => {
                     <p>Алматы</p>
                 </span>
                 <div id="categories">
-                    <a href=".">Электроника</a>
-                    <a href=".">Продукты</a>
-                    <a href=".">Аптека</a>
-                    <a href=".">Дом</a>
-                    <a href=".">Одежда</a>                    
+                    <a href={CATEGORY_ROUTE + "/электроника"}>Электроника</a>
+                    <a href={CATEGORY_ROUTE + "/продукты"}>Продукты</a>
+                    <a href={CATEGORY_ROUTE + "/аптека"}>Аптека</a>
+                    <a href={CATEGORY_ROUTE + "/дом"}>Дом</a>
+                    <a href={CATEGORY_ROUTE + "/одежда"}>Одежда</a>                    
                 </div>
                 <span>
                     <a href=".">Покупайте как юрлицо</a>

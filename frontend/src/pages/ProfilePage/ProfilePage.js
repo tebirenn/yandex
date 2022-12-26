@@ -6,6 +6,7 @@ import yaIdLogo from "../../images/ya_id_logo.svg";
 import yaAvatar from "../../images/ya_avatar.png";
 import messageIcon from "../../images/messageIcon.svg";
 import questionIcon from "../../images/questionIcon.svg";
+import { PROFILE_ROUTE } from "../../utils/consts";
 
 const ProfilePage = () => {
 
@@ -54,9 +55,9 @@ const ProfilePage = () => {
             </section>
 
             <footer>
-                <a href=".">Ru</a>
-                <a href=".">Справка</a>
-                <a href="."><span>© 2022,</span> Яндекс</a>
+                <a href={PROFILE_ROUTE}>Ru</a>
+                <a href={PROFILE_ROUTE}>Справка</a>
+                <a href={PROFILE_ROUTE}><span>© 2022,</span> Яндекс</a>
             </footer>
         </div>
     );

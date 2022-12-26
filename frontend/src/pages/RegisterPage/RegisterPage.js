@@ -89,11 +89,11 @@ const RegisterPage = () => {
             </div>
             <p id="form-after">Яндекс ID — ключ от всех сервисов <br/><a href=".">Узнать больше</a></p>
             <footer>
-                <a href=".">Используйте режим инкогнито на чужом компьютере</a>
+                <a href={MARKET_MAIN_ROUTE}>Используйте режим инкогнито на чужом компьютере</a>
                 <span>
-                    <a href=".">Ru</a>
-                    <a href=".">Справка и поддержка</a>
-                    <p>© 2022, <a href=".">Яндекс</a></p>
+                    <a href={MARKET_MAIN_ROUTE}>Ru</a>
+                    <a href={MARKET_MAIN_ROUTE}>Справка и поддержка</a>
+                    <p>© 2022, <a href={MARKET_MAIN_ROUTE}>Яндекс</a></p>
                 </span>
             </footer>
         </div>
