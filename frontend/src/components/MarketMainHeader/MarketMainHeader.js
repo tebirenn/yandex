@@ -71,7 +71,7 @@ const MarketMainHeader = () => {
                     <a href={CATEGORY_ROUTE + "/одежда"}>Одежда</a>                    
                 </div>
                 <span>
-                    <a href=".">Покупайте как юрлицо</a>
+                    <a href={MARKET_MAIN_ROUTE}>Покупайте как юрлицо</a>
                 </span>
             </div>
         </header>

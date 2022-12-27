@@ -5,3 +5,4 @@ export const AUTH_ROUTE = "/auth";
 export const REGISTER_ROUTE = "/register";
 export const PROFILE_ROUTE = "/profile";
 export const CATEGORY_ROUTE = "/category";
+export const PRODUCT_DETAIL_ROUTE ="/productdetail";
