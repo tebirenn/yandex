@@ -32,18 +32,17 @@ def products_list(request):
         
         return Response({'data': serializer.data , 'count': paginator.count, 'numpages' : paginator.num_pages, 'nextlink': '/api/users/?page=' + str(nextPage), 'prevlink': '/api/users/?page=' + str(previousPage)})
 
-@api_view(['POST'])
-def product_detail(request):
+@api_view(['GET'])
+def product_detail(request,pk):
 
-    data = request.data
-    product_id = data["product_id"]
+    product_id = pk
 
     try:
         product = Product.objects.get(product_id=product_id)
     except Product.DoesNotExist:
         return Response({"error:error"})
 
-    if request.method == 'POST':
+    if request.method == 'GET':
         serializer = ProductSerializer(product,context={'request': request})
         return Response(serializer.data)
 
