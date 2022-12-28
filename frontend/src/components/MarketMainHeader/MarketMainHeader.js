@@ -5,10 +5,10 @@ import AvatarDrop from "../AvatarDrop/AvatarDrop";
 import marketLogo from "../../images/market_logo.svg";
 import bugerMenuIcon from "../../images/burger_menu.svg";
 import plusIcon from "../../images/market-header/plus.svg";
-import yaLogo from "../../images/ya_avatar.png";
+import yaAvatar from "../../images/ya_avatar.png";
 
 import "./MarketMainHeader.css";
-import { AUTH_ROUTE, CATEGORY_ROUTE, MARKET_MAIN_ROUTE } from "../../utils/consts";
+import { AUTH_ROUTE, CATEGORY_ROUTE, MARKET_MAIN_ROUTE, PLUS_MAIN_ROUTE } from "../../utils/consts";
 
 const MarketMainHeader = () => {
     
@@ -31,7 +31,7 @@ const MarketMainHeader = () => {
                 </div>
 
                 <div id="icons">
-                    <span className="header-icons">
+                    <span className="header-icons" onClick={() => navigate(PLUS_MAIN_ROUTE)}>
                         <img src={plusIcon} alt="" />
                         <p>Баллы</p>
                     </span>
@@ -50,7 +50,7 @@ const MarketMainHeader = () => {
                     {
                         localStorage.getItem("user") ?
                         <button className="header-avatar">
-                            <img src={yaLogo} alt="" />
+                            <img src={yaAvatar} alt="" />
                             <AvatarDrop />
                         </button>
                         :

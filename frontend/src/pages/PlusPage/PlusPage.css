@@ -1,0 +1,41 @@
+
+
+#plus-main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 11%;
+    background-color: #f1f3f5;
+}
+
+#plus-main section {
+    background-image: url("../../images/universal-card.webp");
+    height: 510px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 56px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    color: #fff;
+}
+#plus-main section div {
+    width: 40%;
+}
+#plus-main section div h1 {
+    font-size: 40px;
+}
+#plus-main section div p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+#plus-main section div button {
+    background: linear-gradient(90deg,#ff5c4d,#eb469f 26.56%,#8341ef 75%,#3f68f9);
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    width: 400px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+}
