@@ -4,7 +4,9 @@ from rest_framework import status
 
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Product 
+from users.models import User
 from .serializers import *
+from users.serializers import UserSerializer
 
 
 @api_view(['GET'])
@@ -67,3 +69,33 @@ def get_products_by_category(request):
 
     return Response(items)
 
+@api_view(['POST'])
+def add_product_to_buylist(request):
+
+    user_id = request.data["user_id"]
+    products = request.data["products"].split()
+    
+    if request.method == 'POST':
+
+        try:
+            user = User.objects.get(user_id=user_id)  
+        except:
+            return Response({"error": "No such user"})
+
+
+        for product_id in products:
+            
+            try:
+                product = Product.objects.get(product_id=int(product_id))
+            except Product.DoesNotExist:
+                return Response({"error":"No such product"})
+            
+            user.user_buylist.add(product)
+
+        return Response({"user_buylist": str(user.user_buylist.all())})
+            
+
+            
+
+    
+        

@@ -82,3 +82,18 @@ def regUser(request):
             serializer.save()
             return Response({"status":"created"})
         return Response({"status":"error"})
+
+@api_view(['POST'])  
+def changeSub(request):
+
+    if request.method == "POST":
+        user_id = request.data["user_id"]
+        
+        try: 
+            user = User.objects.get(user_id=user_id)
+        except User.DoesNotExist:
+            return Response({"error": "No Such User"})
+
+        user.sub_plus = True
+        user.save()
+        return Response({"status":"updated"})
