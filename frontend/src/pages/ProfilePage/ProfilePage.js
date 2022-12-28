@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./ProfilePage.css";
 import yaTextLogo from "../../images/ya_text_logo.svg";
@@ -6,11 +7,12 @@ import yaIdLogo from "../../images/ya_id_logo.svg";
 import yaAvatar from "../../images/ya_avatar.png";
 import messageIcon from "../../images/messageIcon.svg";
 import questionIcon from "../../images/questionIcon.svg";
-import { PROFILE_ROUTE } from "../../utils/consts";
+import { MARKET_MAIN_ROUTE, PROFILE_ROUTE } from "../../utils/consts";
 
 const ProfilePage = () => {
 
     const user = JSON.parse(localStorage.getItem("user"));
+    const navigate = useNavigate();
 
     return (
         <div id="profile-page">
@@ -49,7 +51,7 @@ const ProfilePage = () => {
                     
                         <input type="text" defaultValue={user.name + " " + user.surname} placeholder="Имя на Яндексе" />
                         <p>Имя на Яндексе – публичное имя вашего аккаунта. Оно отображается в ваших отзывах, комментариях, оценках или ответах. Если вы измените его, новое имя появится не только в новом, но и в старом контенте.</p>
-                        <button>Сохранить</button>
+                        <button onClick={() => navigate(MARKET_MAIN_ROUTE)}>Сохранить</button>
                     </div>
                 </div>
             </section>

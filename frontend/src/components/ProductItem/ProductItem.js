@@ -1,4 +1,5 @@
 import React from "react";
+import { PRODUCT_DETAIL_ROUTE } from "../../utils/consts";
 
 import "./ProductItem.css";
 
@@ -7,7 +8,7 @@ const ProductItem = (props) => {
         <div className="product-item">
             <div className="image-wrapper"><img src={props.image} alt="" /></div>
             <div>
-                <a href="" className="prd-name">{props.name}</a>
+                <a href={PRODUCT_DETAIL_ROUTE + "/" + props.product_id} className="prd-name">{props.name}</a>
                 <p className="prd-desc">{props.desc}</p>
                 <p className="prd-created">{props.createdAt}</p>
             </div>

@@ -3,10 +3,14 @@ import MarketMainPage from "./pages/MarketMainPage/MarketMainPage";
 import TravelMainPage from "./pages/TravelMainPage/TravelMainPage";
 import AuthPage from "./pages/AuthPage/AuthPage";
 
-import { AUTH_ROUTE, CATEGORY_ROUTE, MARKET_MAIN_ROUTE, PROFILE_ROUTE, REGISTER_ROUTE, SERVICES_ROUTE, TRAVEL_MAIN_PAGE_ROUTE } from "./utils/consts";
+import { AUTH_ROUTE, CATEGORY_ROUTE, HOTELS_ROUTE, MARKET_MAIN_ROUTE, PAYMENT_ROUTE, PLUS_MAIN_ROUTE, PRODUCT_DETAIL_ROUTE, PROFILE_ROUTE, REGISTER_ROUTE, SERVICES_ROUTE, TRAVEL_MAIN_PAGE_ROUTE } from "./utils/consts";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
+import PlusPage from "./pages/PlusPage/PlusPage";
+import HotelsPage from "./pages/HotelsPage/HotelsPage";
+import PaymentPage from "./pages/PaymentPage/PaymentPage";
 
 export const publicRoutes = [
     {
@@ -37,4 +41,20 @@ export const publicRoutes = [
         path: CATEGORY_ROUTE + "/:category",
         Component: CategoryPage
     },
+    {
+        path: PRODUCT_DETAIL_ROUTE + "/:product_id",
+        Component: ProductDetailPage
+    },
+    {
+        path: PLUS_MAIN_ROUTE,
+        Component: PlusPage
+    },
+    {
+        path: HOTELS_ROUTE,
+        Component: HotelsPage
+    },
+    {
+        path: PAYMENT_ROUTE,
+        Component: PaymentPage
+    }
 ]
