@@ -7,3 +7,5 @@ export const PROFILE_ROUTE = "/profile";
 export const CATEGORY_ROUTE = "/category";
 export const PRODUCT_DETAIL_ROUTE ="/productdetail";
 export const PLUS_MAIN_ROUTE = "/plus";
+export const HOTELS_ROUTE = "/hotels";
+export const PAYMENT_ROUTE = "/payment";
