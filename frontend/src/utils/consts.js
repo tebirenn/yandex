@@ -9,3 +9,4 @@ export const PRODUCT_DETAIL_ROUTE ="/productdetail";
 export const PLUS_MAIN_ROUTE = "/plus";
 export const HOTELS_ROUTE = "/hotels";
 export const PAYMENT_ROUTE = "/payment";
+export const SUB_ROUTE = "/sub";

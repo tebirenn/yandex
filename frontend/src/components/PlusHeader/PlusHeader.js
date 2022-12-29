@@ -7,7 +7,7 @@ import plusTextImg from "../../images/plus-text.svg";
 import bugerMenuIcon from "../../images/burger_menu.svg";
 import yaAvatar from "../../images/ya_avatar.png";
 import AvatarDrop from "../AvatarDrop/AvatarDrop";
-import { PLUS_MAIN_ROUTE } from "../../utils/consts";
+import { AUTH_ROUTE } from "../../utils/consts";
 
 const PlusHeader = () => {
     return (
@@ -30,7 +30,7 @@ const PlusHeader = () => {
                             <AvatarDrop />
                         </button>
                         :
-                        <a href={PLUS_MAIN_ROUTE} className="header-login-btn">Войти</a>
+                        <a href={AUTH_ROUTE} className="header-login-btn">Войти</a>
                     }
                 </span>
             </div>

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./AvatarDrop.css";
 import yaAvatar from "../../images/ya_avatar.png";
 import exitIcon from "../../images/exit.svg";
-import { PROFILE_ROUTE } from "../../utils/consts";
+import { MARKET_MAIN_ROUTE, PROFILE_ROUTE } from "../../utils/consts";
 // import { MARKET_MAIN_ROUTE } from "../../utils/consts";
 // import cubeIcon from "../../images/cube.svg";
 // import heartIcon from "../../images/heart.svg";
@@ -29,6 +29,7 @@ const AvatarDrop = () => {
             </span>
             <span onClick={() => {
                 localStorage.clear();
+                navigate(MARKET_MAIN_ROUTE);
                 window.location.reload(false);
             }}>
                 <div>
